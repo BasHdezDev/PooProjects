@@ -1,7 +1,7 @@
 #15. Crear un programa que pida al usuario ingresar una cadena de texto y determine si es un palíndromo o no.
 
 
-msg = input("Ingrese su mensaje: ")
+msg = input("Type a string: ")
 
 def pali(msg):
 
@@ -10,9 +10,9 @@ def pali(msg):
     aux += msg[i]
 
   if msg == aux:
-    x = print(f"{msg} y {aux} son palíndromos")
+    x = print(f"{msg} and {aux} are palíndromes")
   else:
-    x = print(f"{msg} y {aux} no son palíndromos")
+    x = print(f"{msg} and {aux} are not palíndromes")
   return x
 
 
