@@ -1,13 +1,25 @@
 #7. Escribir un programa que encuentre el número más grande y el más pequeño en una lista dada.
 
-list = [24,1,14,26,40]
+def find_min_max(numbers):
 
-index = len(list)
+  min_num = numbers[0]
 
-aux = 0
+  max_num = numbers[0]
 
-for i in range(0,index,+1):
-    if list[aux]>list[i]:
+  for num in numbers:
 
+    if num < min_num:
+
+      min_num = num
+
+    elif num > max_num:
+
+      max_num = num
+
+  return (min_num, max_num)
+
+numbers = [3, 5, 2, 8, 1]
+
+print(find_min_max(numbers))
 
 
